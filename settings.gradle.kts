@@ -6,15 +6,17 @@ pluginManagement {
                 includeGroupByRegex("com\\.google.*")
                 includeGroupByRegex("androidx.*")
             }
+            maven("https://developer.huawei.com/repo/")
+            mavenCentral()
+            gradlePluginPortal()
         }
-        mavenCentral()
-        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
+        maven("https://developer.huawei.com/repo/")
         mavenCentral()
     }
 }

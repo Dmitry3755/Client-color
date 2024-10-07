@@ -1,0 +1,13 @@
+//services.flavors.gradle
+android {
+    productFlavors {
+        create("gms") {
+            dimension = "services"
+            buildConfigField("String", "SERVICE_TYPE", "\"gms\"")
+        }
+        create("hms") {
+            dimension = "services"
+            buildConfigField("String", "SERVICE_TYPE", "\"hms\"")
+        }
+    }
+}
