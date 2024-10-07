@@ -19,7 +19,6 @@ android {
             useSupportLibrary = true
         }
     }
-
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -48,12 +47,18 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
-    flavorDimensions.add("client")
+    flavorDimensions.add("services")
 }
 
-apply(from = "operator.flavors.gradle")
+apply(from = "services.flavors.gradle")
 
 dependencies {
+
+    //gms
+    "gmsImplementation"(libs.play.services.maps)
+
+    //hms
+    "hmsImplementation"(libs.base)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
