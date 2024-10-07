@@ -1,4 +1,5 @@
 [versions]
+agconnectCore = "1.5.0.300"
 agp = "8.6.1"
 base = "6.13.0.300"
 kotlin = "1.9.0"
@@ -9,9 +10,14 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.6"
 activityCompose = "1.9.2"
 composeBom = "2024.09.03"
+networkGrs = "5.0.6.301"
 playServicesMaps = "19.0.0"
+securityBase = "1.1.5.306"
+securityEncrypt = "1.1.5.306"
+tasks = "1.4.1.300"
 
 [libraries]
+agconnect-core = { module = "com.huawei.agconnect:agconnect-core", version.ref = "agconnectCore" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 base = { group = "com.huawei.hms", name="base", version.ref = "base" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -27,7 +33,11 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+network-grs = { module = "com.huawei.hms:network-grs", version.ref = "networkGrs" }
 play-services-maps = { group = "com.google.android.gms",name="play-services-maps", version.ref = "playServicesMaps" }
+security-base = { module = "com.huawei.android.hms:security-base", version.ref = "securityBase" }
+security-encrypt = { module = "com.huawei.android.hms:security-encrypt", version.ref = "securityEncrypt" }
+tasks = { module = "com.huawei.hmf:tasks", version.ref = "tasks" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

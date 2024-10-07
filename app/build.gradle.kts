@@ -21,11 +21,16 @@ android {
     }
     buildTypes {
         release {
+            isDebuggable = false
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        debug {
+            isDebuggable = true
+            isMinifyEnabled = false
         }
     }
     compileOptions {
@@ -48,9 +53,11 @@ android {
         }
     }
     flavorDimensions.add("services")
+    flavorDimensions.add("client")
 }
 
 apply(from = "services.flavors.gradle")
+apply(from = "operator.flavors.gradle")
 
 dependencies {
 
@@ -59,6 +66,11 @@ dependencies {
 
     //hms
     "hmsImplementation"(libs.base)
+    "hmsImplementation"(libs.tasks)
+    "hmsImplementation"(libs.network.grs)
+    "hmsImplementation"(libs.security.base)
+    "hmsImplementation"(libs.security.encrypt)
+    "hmsImplementation"(libs.agconnect.core)
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
