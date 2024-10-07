@@ -37,6 +37,7 @@ android {
         jvmTarget = "1.8"
     }
     buildFeatures {
+        buildConfig = true
         compose = true
     }
     composeOptions {
@@ -47,7 +48,10 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    flavorDimensions.add("client")
 }
+
+apply(from = "operator.flavors.gradle")
 
 dependencies {
 

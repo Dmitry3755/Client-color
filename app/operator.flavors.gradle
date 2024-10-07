@@ -1,0 +1,65 @@
+//operator.flavors.gradle
+android {
+    productFlavors {
+        create("operatorA") {
+            dimension = "client"
+            applicationId = "com.example.operatorA"
+            resValue("string", "client_name", "OperatorA")
+            resValue("color", "client_color", "#FF5733")
+        }
+        create("operatorB") {
+            dimension = "client"
+            applicationId = "com.example.operatorB"
+            resValue("string", "client_name", "OperatorB")
+            resValue("color", "client_color", "#33FF57")
+        }
+        create("operatorC") {
+            dimension = "client"
+            applicationId = "com.example.operatorC"
+            resValue("string", "client_name", "OperatorC")
+            resValue("color", "client_color", "#3357FF")
+        }
+        create("operatorD") {
+            dimension = "client"
+            applicationId = "com.example.operatorD"
+            resValue("string", "client_name", "OperatorD")
+            resValue("color", "client_color", "#FF33A1")
+        }
+        create("operatorE") {
+            dimension = "client"
+            applicationId = "com.example.operatorE"
+            resValue("string", "client_name", "OperatorE")
+            resValue("color", "client_color", "#A133FF")
+        }
+        create("operatorF") {
+            dimension = "client"
+            applicationId = "com.example.operatorF"
+            resValue("string", "client_name", "OperatorF")
+            resValue("color", "client_color", "#FF8C33")
+        }
+        create("operatorG") {
+            dimension = "client"
+            applicationId = "com.example.operatorG"
+            resValue("string", "client_name", "OperatorG")
+            resValue("color", "client_color", "#33FF8C")
+        }
+        create("operatorH") {
+            dimension = "client"
+            applicationId = "com.example.operatorH"
+            resValue("string", "client_name", "OperatorH")
+            resValue("color", "client_color", "#8C33FF")
+        }
+        create("operatorI") {
+            dimension = "client"
+            applicationId = "com.example.operatorI"
+            resValue("string", "client_name", "OperatorI")
+            resValue("color", "client_color", "#FF3333")
+        }
+        create("operatorJ") {
+            dimension = "client"
+            applicationId = "com.example.operatorJ"
+            resValue("string", "client_name", "OperatorJ")
+            resValue("color", "client_color", "#33FFA1")
+        }
+    }
+}
