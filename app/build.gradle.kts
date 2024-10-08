@@ -61,6 +61,7 @@ apply(from = "operator.flavors.gradle")
 
 dependencies {
 
+    implementation(libs.androidx.runtime.livedata)
     //gms
     "gmsImplementation"(libs.play.services.maps)
 

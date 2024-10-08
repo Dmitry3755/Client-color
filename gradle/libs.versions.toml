@@ -15,6 +15,7 @@ playServicesMaps = "19.0.0"
 securityBase = "1.1.5.306"
 securityEncrypt = "1.1.5.306"
 tasks = "1.4.1.300"
+runtimeLivedata = "1.7.3"
 
 [libraries]
 agconnect-core = { module = "com.huawei.agconnect:agconnect-core", version.ref = "agconnectCore" }
@@ -38,6 +39,7 @@ play-services-maps = { group = "com.google.android.gms",name="play-services-maps
 security-base = { module = "com.huawei.android.hms:security-base", version.ref = "securityBase" }
 security-encrypt = { module = "com.huawei.android.hms:security-encrypt", version.ref = "securityEncrypt" }
 tasks = { module = "com.huawei.hmf:tasks", version.ref = "tasks" }
+androidx-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "runtimeLivedata" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
